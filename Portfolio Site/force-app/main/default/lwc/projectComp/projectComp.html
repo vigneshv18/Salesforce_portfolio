@@ -1,0 +1,20 @@
+<template>
+    <div class="Container">
+        
+                <template if:true={projectData}>
+                    <lightning-accordion class="accordion_section"  >
+                        <template for:each={projectData} for:item="project">
+                        <lightning-accordion-section key={project.id} name={project.name} label={project.name} active-section-name={activeSectionName}>
+                            <div class="slds-m-top_small">
+                                <p class="para_text">{project.description}</p>
+                                <p class="para_text slds-p-top_medium"><strong>Company :</strong> {project.company}</p>
+                                <p class="para_text slds-p-top_medium"><strong>Technology :</strong> {project.technology}</p>
+                                <p class="para_text slds-p-top_medium"><strong>Role :</strong> {project.role}</p>
+                            </div>
+                        </lightning-accordion-section>
+                    </template>
+                    </lightning-accordion>
+                </template>
+
+    </div>
+</template>

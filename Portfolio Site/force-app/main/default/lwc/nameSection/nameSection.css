@@ -1,0 +1,79 @@
+/*Desktop*/
+.name_section {
+    background-color: #f1f1f1;
+    height: 320px;
+    font-weight: 700;
+    justify-content: center;
+    font-family: Poppins;
+    text-align: center;
+    padding-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.name_section h1 {
+    font-size: 28px;
+}
+
+.name_section h2 {
+    font-size: 20px;
+
+}
+
+.name_section .Button_class {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-style: poppins;
+    padding: 2px 6px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.name_section .Button_class button {
+    background-color: #f1f1f1;
+      color: black;
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      
+      font-size: 16px;
+      font-style: Poppins;
+      border: none;
+      border-radius: 10px;
+  }
+
+  .name_section .Button_class lightning-icon {
+    font-size: 16px;
+    margin-right: 2px;
+    color: inherit;
+  }
+
+.para {
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    text-align: center;
+    font-style: Poppins;
+    padding-bottom: 32px;
+}
+@media only screen and (min-device-width:320px) and (max-device-width:980px) {
+    .para {
+        font-size: 18px;
+        font-weight: 400;
+        justify-content: center;
+        text-align: center;
+        font-style: Poppins;
+        padding: 8px;
+    }
+    
+    .name_section .Button_class {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+}
